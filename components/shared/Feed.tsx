@@ -75,7 +75,7 @@ const Feed = async ({ username }: { username?: string }) => {
     <div className="p-4 bg-white shadow-md rounded-lg flex flex-col gap-12">
       {posts.length
         ? posts.map((post) => <FeedPost key={post.id} post={post} />)
-        : "TA还没有发布帖子哦"}
+        : "你关注的用户还没有发布内容，去探索页刷刷看吧～"}
     </div>
   );
 };
