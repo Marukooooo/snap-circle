@@ -85,12 +85,12 @@ export default async function ProfilePage({ params }: Props) {
 
               <div className="flex flex-col items-center">
                 <span className="font-medium">{user._count.followers}</span>
-                <span className="text-sm">粉丝</span>
+                <span className="text-sm">关注</span>
               </div>
 
               <div className="flex flex-col items-center">
                 <span className="font-medium">{user._count.followings}</span>
-                <span className="text-sm">关注</span>
+                <span className="text-sm">粉丝</span>
               </div>
             </div>
           </div>

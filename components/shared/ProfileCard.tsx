@@ -46,34 +46,6 @@ export default async function ProfileCard() {
             ? user.name + " " + user.surname
             : user.username}
         </span>
-        <div className="flex items-center gap-4">
-          <div className="flex">
-            <Image
-              src="/test1.jpg"
-              alt=""
-              width={12}
-              height={12}
-              className="rounded-full object-cover w-3 h-3"
-            />
-            <Image
-              src="/test1.jpg"
-              alt=""
-              width={12}
-              height={12}
-              className="rounded-full object-cover w-3 h-3"
-            />
-            <Image
-              src="/test1.jpg"
-              alt=""
-              width={12}
-              height={12}
-              className="rounded-full object-cover w-3 h-3"
-            />
-          </div>
-          <span className="text-xs text-gray-500">
-            {user._count.followers} 粉丝
-          </span>
-        </div>
         <button className="bg-blue-500 text-white text-xs p-2 rounded-md">
           我的主页
         </button>
