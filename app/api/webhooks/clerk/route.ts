@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
         await prisma.user.create({
           data: {
             id: evt.data.id,
-            username: user.username || user.email_addresses[0]?.email_address,
+            username: user.username as string,
             avatar: user.image_url || "/noAvatar.png",
             cover: "/noCover.png",
           },
