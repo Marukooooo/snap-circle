@@ -1,5 +1,6 @@
 import prisma from "@/lib/client";
 import { auth } from "@clerk/nextjs/server";
+import Link from "next/link";
 import Image from "next/image";
 
 export default async function ProfileCard() {
@@ -46,9 +47,13 @@ export default async function ProfileCard() {
             ? user.name + " " + user.surname
             : user.username}
         </span>
-        <button className="bg-blue-500 text-white text-xs p-2 rounded-md">
+
+        <Link
+          href={`/profile/${user.username}`}
+          className="bg-blue-500 text-white text-xs p-2 rounded-md hover:bg-blue-600 transition"
+        >
           我的主页
-        </button>
+        </Link>
       </div>
     </div>
   );
